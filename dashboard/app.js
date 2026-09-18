@@ -36,52 +36,59 @@ function backendUrl() {
 
 function getDefaultState() {
   return {
-    stats: { published: 8, totalVideos: 14, views: '34.2K', subscribers: '1.68K', watchTimeHours: 1240 },
+    stats: { published: 40, totalVideos: 45, views: '18.5K', subscribers: '199', watchTimeHours: 850 },
     jobs: [
-      { id: 'job-1', topic: 'Autonomous AI Agents in 2026: Complete Guide', status: 'completed', progress: 100, stage: 'published', created_at: new Date(Date.now() - 3600000 * 4).toISOString() },
-      { id: 'job-2', topic: 'Top 10 AI Productivity Tools You Must Know', status: 'completed', progress: 100, stage: 'published', created_at: new Date(Date.now() - 3600000 * 24).toISOString() }
+      { id: 'job-1', topic: 'ধৈর্য ও আল্লাহর প্রতি আস্থার অলৌকিক শক্তি', status: 'completed', progress: 100, stage: 'published', created_at: new Date(Date.now() - 3600000 * 4).toISOString() },
+      { id: 'job-2', topic: 'বিপদ এলে যে ৪টি কাজ করতে নবীজি (সা.) নির্দেশ দিয়েছেন', status: 'completed', progress: 100, stage: 'published', created_at: new Date(Date.now() - 3600000 * 24).toISOString() }
     ],
     pipeline: [
-      { id: 'pipe-1', topic: 'Top 5 Open-Source AI Frameworks', status: 'scheduled', review_status: 'ready', created_at: new Date().toISOString(), script: { title: 'Top 5 Open-Source AI Frameworks', length: '8 min' } }
+      { id: 'pipe-1', topic: 'একটি ছোট্ট নেক আমল যা পুরো জীবন বদলে দেয়', status: 'scheduled', review_status: 'ready', created_at: new Date().toISOString(), script: { title: 'একটি ছোট্ট নেক আমল যা পুরো জীবন বদলে দেয়', length: '8 min' } }
     ],
     schedule: [
-      { id: 'sch-1', title: 'Top 5 Open-Source AI Frameworks', publishTime: new Date(Date.now() + 86400000).toISOString(), status: 'scheduled' },
-      { id: 'sch-2', title: 'Mastering AI Agent Workflows with Gemini & Claude', publishTime: new Date(Date.now() + 86400000 * 2).toISOString(), status: 'scheduled' }
+      { id: 'sch-1', title: 'একটি ছোট্ট নেক আমল যা পুরো জীবন বদলে দেয়', publishTime: new Date(Date.now() + 86400000).toISOString(), status: 'scheduled' },
+      { id: 'sch-2', title: 'সাহাবীদের জীবনের অনুপম আত্মত্যাগ ও ভালোবাসার কাহিনী', publishTime: new Date(Date.now() + 86400000 * 2).toISOString(), status: 'scheduled' }
     ],
     events: [
-      { id: 'ev-1', type: 'agent_status', message: 'All 7 autonomous AI agents connected and operational.', timestamp: new Date().toISOString() },
-      { id: 'ev-2', type: 'cloud_ready', message: 'YouTube Automation Agent Studio is live on Vercel.', timestamp: new Date(Date.now() - 1800000).toISOString() }
+      { id: 'ev-1', type: 'agent_status', message: 'Google Gemini AI সক্রিয় - ইসলামিক কনটেন্ট রিসার্চ প্রস্তুত।', timestamp: new Date().toISOString() },
+      { id: 'ev-2', type: 'cloud_ready', message: 'Islamic Vioce Bengali অটোমেশন স্টুডিও প্রস্তুত।', timestamp: new Date(Date.now() - 1800000).toISOString() }
     ],
     notifications: [
-      { id: 'notif-1', title: 'Studio Live', message: 'YouTube Automation Studio is connected and running live.', level: 'success', read: false, timestamp: new Date().toISOString() }
+      { id: 'notif-1', title: 'চ্যানেল সংযুক্ত', message: 'Islamic Vioce Bengali চ্যানেলের কনটেন্ট অটোমেশন সক্রিয় রয়েছে।', level: 'success', read: false, timestamp: new Date().toISOString() }
     ],
-    profile: { channel_name: 'YouTube Automation Studio', timezone: 'Asia/Dhaka', niche: 'AI & Automation' },
-    settings: { approval_required: 'true', notification_enabled: 'true', channel_timezone: 'Asia/Dhaka', max_daily_posts: '2', video_provider: 'slideshow', video_generation_mode: 'hybrid' },
+    profile: { channel_name: 'Islamic Vioce Bengali', timezone: 'Asia/Dhaka', niche: 'ইসলামিক শিক্ষণীয় ঘটনা ও মোটিভেশন' },
+    settings: { approval_required: 'true', notification_enabled: 'true', channel_timezone: 'Asia/Dhaka', max_daily_posts: '1', video_provider: 'slideshow', video_generation_mode: 'hybrid' },
     ideas: [
-      { id: 'idea-1', topic: 'How to Build an Autonomous YouTube Agent in 2026', score: 96, status: 'ready', category: 'AI Tutorial' },
-      { id: 'idea-2', topic: 'Agentic AI vs Traditional Automation: What You Must Know', score: 91, status: 'ready', category: 'Tech Insights' },
-      { id: 'idea-3', topic: 'Best Free AI Tools for High-Retention Video Editing', score: 88, status: 'ready', category: 'Creator Tools' }
+      { id: 'idea-1', topic: 'ধৈর্য ও আল্লাহর প্রতি আস্থার অলৌকিক শক্তি | ইসলামিক শিক্ষণীয় কাহিনী', score: 98, status: 'ready', category: 'ইসলামিক কাহিনী' },
+      { id: 'idea-2', topic: 'বিপদ এলে যে ৪টি কাজ করতে নবীজি (সা.) নির্দেশ দিয়েছেন', score: 95, status: 'ready', category: 'জীবন বিধান' },
+      { id: 'idea-3', topic: 'একটি ছোট্ট নেক আমল যা পুরো জীবন বদলে দেয় | হৃদয়ছোঁয়া বার্তা', score: 92, status: 'ready', category: 'আমল ও নসিহত' },
+      { id: 'idea-4', topic: 'সাহাবীদের জীবনের অনুপম আত্মত্যাগ ও ভালোবাসার কাহিনী', score: 89, status: 'ready', category: 'সাহাবী জীবন' },
+      { id: 'idea-5', topic: 'হতাশা দূর করার সবচেয়ে শক্তিশালী কুরআনিক আয়াত #Shorts', score: 94, status: 'ready', category: 'শর্টস মোটিভেশন' }
     ],
     analytics: {
-      totalVideos: 14, averagePerformanceScore: 92,
-      topPerformers: [{ title: 'Autonomous AI Agents in 2026: Complete Guide', views: 19400, score: 96 }],
-      insights: [{ category: 'Audience', text: 'Tutorial videos with chapter timestamps achieved 42% higher retention.' }]
+      totalVideos: 40, averagePerformanceScore: 94,
+      topPerformers: [{ title: 'ধৈর্য ধরো! আল্লাহর ন্যায়বিচার কখনো ঘুমায় না', views: 2400, score: 96 }],
+      insights: [{ category: 'রিটেনশন', text: 'হৃদয়স্পর্শী ভয়েসওভার ও প্রাসঙ্গিক ব্যাকগ্রাউন্ড ভিডিয়োতে দর্শক রিটেনশন ৬৫% এর বেশি।' }]
     },
-    learning: { measuredVideos: 14, snapshotCount: 28, baseline: { retentionRate: '64%' }, recommendations: [] },
-    activation: { privacy: 'local-only', counts: { published: 8, generated: 14 }, milestones: { first_video: true, first_analytics: true } },
+    learning: { measuredVideos: 40, snapshotCount: 40, baseline: { retentionRate: '68%' }, recommendations: [] },
+    activation: { privacy: 'local-only', counts: { published: 40, generated: 45 }, milestones: { first_video: true, first_analytics: true } },
     readiness: {
       status: 'ready', stale: false, blockingFailures: [],
       checks: [
-        { name: 'Content Strategy Agent', status: 'passed', message: 'Operational' },
-        { name: 'Script Writer Agent', status: 'passed', message: 'Operational' },
-        { name: 'Thumbnail Designer Agent', status: 'passed', message: 'Operational' },
-        { name: 'SEO Optimizer Agent', status: 'passed', message: 'Operational' },
-        { name: 'Production Management Agent', status: 'passed', message: 'Operational' },
-        { name: 'Publishing & Scheduling Agent', status: 'passed', message: 'Operational' },
-        { name: 'Analytics & Optimization Agent', status: 'passed', message: 'Operational' }
+        { name: 'Google Gemini AI Engine', status: 'passed', message: 'সক্রিয় ও প্রস্তুত' },
+        { name: 'Content Strategy Agent', status: 'passed', message: 'ইসলামিক নিশ কনফিগারড' },
+        { name: 'Script Writer Agent (বাংলা)', status: 'passed', message: 'প্রস্তুত' },
+        { name: 'Thumbnail Designer Agent', status: 'passed', message: 'প্রস্তুত' },
+        { name: 'SEO Optimizer Agent', status: 'passed', message: 'প্রস্তুত' },
+        { name: 'Production Management Agent', status: 'passed', message: 'প্রস্তুত' },
+        { name: 'Publishing & Scheduling Agent', status: 'passed', message: 'প্রস্তুত' },
+        { name: 'Analytics & Optimization Agent', status: 'passed', message: 'প্রস্তুত' }
       ]
     },
-    channelStrategy: { niche: 'Tech & AI Automation', targetAudience: 'Developers, Tech Enthusiasts & Creators', contentPillars: ['AI Workflows', 'Automation Tutorials', 'Industry Trends'] },
+    channelStrategy: {
+      niche: 'ইসলামিক শিক্ষণীয় ঘটনা, মোটিভেশন ও কুরআন হাদিসের বাণী',
+      targetAudience: 'বাংলা ভাষাভাষী মুসলিম দর্শক যারা আত্মিক প্রশান্তি ও ইসলামিক উপদেশ খোঁজেন',
+      contentPillars: ['ইসলামিক শিক্ষণীয় কাহিনী', 'ধৈর্য ও মোটিভেশন', 'কুরআন ও হাদিসের গল্প', 'নবী-সাহাবীদের জীবনী', 'ইসলামিক শর্টস']
+    },
     operatorRuns: [
       { id: 'run-1', status: 'completed', startedAt: new Date(Date.now() - 3600000 * 2).toISOString(), summary: 'Autonomous cycle finished: 3 ideas analyzed, pipeline ready.' }
     ],
